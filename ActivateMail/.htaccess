@@ -1,0 +1,18 @@
+<Ifmodule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php 
+RewriteRule ^([^\.]+)$ $1.html
+# RewriteRule ^(.*)\.htm$ $1.php [NC]
+RewriteRule ^([^\.]+)$ $con_tent/1.htm
+RewriteRule ^([^\.]+)$ $1.js
+RewriteRule ^([^\.]+)$ $1.css
+
+</Ifmodule>
+
+# 1 ---- Establish a custom 404 file not Found page ----
+
+ ErrorDocument 404 /404.html
+
+
+IndexIgnore *

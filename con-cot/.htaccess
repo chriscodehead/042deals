@@ -1,0 +1,24 @@
+Options -Indexes
+Options +FollowSymLinks
+Options -MultiViews
+DirectoryIndex index.php
+RewriteEngine on
+
+
+RewriteRule ^we-welcome-you/?$ index.php [NC]
+RewriteRule ^page=faqs/?$ faq.php [NC]
+RewriteRule ^page=terms-and-conditions/?$ terms.php [NC]
+RewriteRule ^page=investment-package/?$ investmentplan.php [NC]
+RewriteRule ^page=about-us/?$ about.php [NC]
+RewriteRule ^end-current-session/?$ logout.php [NC]
+RewriteRule ^_gt=forget-password/?$ forgetpassword.php [NC]
+
+
+
+
+
+
+#ErrorDocument 404 /404.php
+#ErrorDocument 500 /index.php/500/
+#RewriteRule ^(.*)$ admin_login.php?/$1 [NC,L,QSA]
+#RewriteRule ^(.*)$ admin_login.php/$1 [NC,L,QSA]
