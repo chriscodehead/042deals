@@ -71,6 +71,9 @@ if(isset($_POST['submit'])){
 ?>
 
 <h2>Upload Image with watermark</h2>
+<h2>Upload Image with watermark</h2>
+<h2>Upload Image with watermark</h2>#
+<h2>Upload Image with watermark</h2>
 
 <!-- HTML form for uploading the image -->
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
